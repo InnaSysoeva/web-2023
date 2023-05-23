@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth_window_styles.css">
+</head>
+<body>
+
+    <!--Navbar section-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="#home" id="navbar_logo">VetClinic</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="#home" class="navbar_links" id="home-page">Головна</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#about" class="navbar_links" id="about-page">Про нас</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#services" class="navbar_links" id="services-page">Послуги</a>
+                </li>
+                <li class="navbar_btn">
+                    <p class="button" id="signup">Sign up/Log in</p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Second Section-->
+    <div class="hero" id="home">
+        <div class="hero_container">
+            <h1 class="hero_heading">Піклуємось про ваших улюбленців</h1>
+            <p class="hero_description">Найкращі ветеринарні послуги в Україні</p>
+            <button class="main_btn"><a href="#sign-up">Записатись на прийом</a></button>
+        </div>
+    </div>
+
+    <!--About Section-->
+    <div class="main" id="about">
+        <h1>Про нас</h1>
+        <div class="main_container">
+            <div class="main_img_container">
+                <div class="main_img-card"><img src="12595191722.jpg" alt="" width="100%"></div>
+            </div>
+            <div class="main_content">
+                <p>Клініка VetClinic заснована в 2023 році командою професіоналів ветеринарної медицини та професійних менеджерів в управлінні медичних центрів в Україні, які об'єднані любов'ю до тварин.</p>
+                <h2>Чому варто обрати саме нас?</h2>
+                <ul>
+                    <li>Сучасні методи лікування</li>
+                    <li>Інноваційне обладнання</li>
+                    <li>Професійна команда</li>
+                    <li>Дбайливе ставлення до ваших улюбленців</li>
+                    <li>Взаєморозуміння з клієнтом</li>
+                </ul>
+                <button class="main_btn"><a href="#sign-up">Записатись на прийом</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!--Services Section-->
+    <div class="services" id="services">
+        <h1>Наші послуги</h1>
+        <div class="services_wrapper">
+            <div class="services_card">
+                <h2>Вакцинація</h2>
+                <p>Профілактика інфекційних захворювань</p>
+                <div class="services_btn"><button>Дізнатись більше</button></div>
+            </div>
+            <div class="services_card">
+                <h2>Лабораторія</h2>
+                <p>Сучасні лабораторні дослідження</p>
+                <div class="services_btn"><button>Дізнатись більше</button></div>
+            </div>
+            <div class="services_card">
+                <h2>Діагностика</h2>
+                <p>Діагностування та лікування хвороб</p>
+                <div class="services_btn"><button>Дізнатись більше</button></div>
+            </div>
+            <div class="services_card">
+                <h2>Офтальмологія</h2>
+                <p>Діагностика та лікування очей</p>
+                <div class="services_btn"><button>Дізнатись більше</button></div>
+            </div>
+            <div class="services_card">
+                <h2>Стоматологія</h2>
+                <p>Діагностика та лікування зубів</p>
+                <div class="services_btn"><button>Дізнатись більше</button></div>
+            </div>
+            <div class="services_card">
+                <h2>Стаціонар</h2>
+                <p>Медичний нагляд за тваринами в клініці</p>
+                <div class="services_btn"><button>Дізнатись більше</button></div>
+            </div>
+            <div class="services_card">
+                <h2>Хірургія</h2>
+                <p>Оперативне здійснення хірургічних втручань</p>
+                <div class="services_btn"><button>Дізнатись більше</button></div>
+            </div>
+            <div class="services_card">
+                <h2>Пакети послуг</h2>
+                <p>Комплексні процедури та інші послуги</p>
+                <div class="services_btn"><button>Дізнатись більше</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Features Section-->
+    <div class="main" id="sign-up">
+        <div class="main_container">
+            <div class="main_content">
+                <h1>Запишіться на консультацію прямо зараз</h1>
+                <!-- <p>Заповніть форму і очікуйте на дзвінок нашого менеджера</p> -->
+                <h2>Чекаємо на вас!</h2>
+                <!-- <button class="main_btn"><a href=""></a>Підтвердити форму</button> -->
+            </div>
+            <div class="form">
+                    <form action="/appointment" method="post">
+                      <label for="name">Ім'я</label>
+                      <input type="text" id="name" name='name' placeholder="Ім'я" required>
+                  
+                      <label for="number">Номер телефону</label>
+                      <input type="text" id="number" name='number' placeholder="Номер" required>
+
+                      <label for="brief" id='brief'>Коротко про вашу проблему</label>
+                      <textarea name="brief"></textarea>
+                    
+                      <input type="submit" value="Записатись">
+                    </form>
+            </div>
+    </div>
+
+    <!--Footer Section-->
+    <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Про нас</h2>
+              <a href="">Про клініку</a> 
+              <a href="">Наша команда</a>
+              <a href="">Контакти</a> 
+              <a href="">Кар'єра в VetClinic</a>
+            </div>
+            <div class="footer__link--items">
+                <h2>Соцмережі</h2>
+                <a href="">YouTube</a> 
+                <a href="">Instagram</a>
+                <a href="">TikTok</a> 
+                <a href="">Telegram</a>
+              </div>
+          </div>
+        </div>
+        <p class="website__rights">© VetClinic 2023. All rights reserved</p>
+      </div>
+    
+    <!--Modal Window for Log in-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form action="/account" method="post" class="modal_window_form">
+            <!-- <input type="text" name="username" placeholder=""> -->
+            <input type="email" name="email" placeholder="Електронна пошта" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <input type="submit" value="Підтвердити">
+            <p id="reg_btn">Не маєете акаунта? Зареєструйтесь</p>
+        </form>
+        </div>
+      </div>
+    
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+          <span class="close2">&times;</span>
+          <form action="/registration" method="post" class="modal_window_form2">
+            <!-- <input type="text" name="username" placeholder=""> -->
+            <input type="email" name="email" placeholder="Електронна пошта" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <input type="submit" value="Зареєструватись">
+        </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="auth_window.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* The Modal (background) */
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    .modal_window_form  input[type=email], .modal_window_form2  input[type=email] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    } 
+
+    .modal_window_form  input[type=password], .modal_window_form2  input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }  
+  
+  
+   .modal_window_form textarea, .modal_window_form2  textarea {
+      width: 100%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;
+    }
+    .modal_window_form input[type=submit], .modal_window_form2 input[type=submit] {
+      width: 100%;
+      font-size: 1.4rem;
+      background: #43cea2;  
+      background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  
+      background: linear-gradient(to right, #185a9d, #43cea2);
+      padding: 20px 60px;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      margin-top: 2rem;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.35s;
+      outline: none;
+      
+    }
+    
+    .modal_window_form input[type=submit]:hover, .modal_window_form2 input[type=submit]:hover {
+      background: #030007;
+    }
+    
+    .modal_window_form, .modal_window_form2 {
+      border-radius: 20px;
+      background-color: #ffffff;
+      padding: 20px;
+    } 
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: white;
+      margin: 6% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 25%; /* Could be more or less, depending on screen size */
+    }  
+    
+    /* The Close Button */
+    .close, .close2 {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus, .close2:hover, .close2:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    #reg_btn {
+      font-size: 0.8rem;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: underline;
+    }
